@@ -1,0 +1,17 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: iframely
+    # restart: always
+    # Expose port, not open to the world
+    expose:
+      - "8061"
+    # Remember to upload file to volumes in dokploy platform.
+    volumes:
+      - ./volumes/config.local.js:/iframely/config.local.js
+
+networks:
+  dokploy-network:
+    external: true
