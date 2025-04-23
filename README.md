@@ -5,6 +5,14 @@ It's a simple way to run Iframely on your own server.
 
 ## Usage
 
+1. Prepare environment
+
+```shell
+cp ./config.local.js.SAMPLE ./config.local.js
+```
+
+2. Run docker
+
 ```shell
 # Run
 docker compose up -d

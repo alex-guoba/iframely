@@ -11,7 +11,7 @@ services:
     # Reset the directory of volumes
     # Remember to upload file to volumes in dokploy platform.
     volumes:
-      - ../files/volumes/config.local.js:/iframely/config.local.js
+      - ../files/volumes/config.local.js:/iframely/config.local.js:ro
 
 networks:
   dokploy-network:
